@@ -1,0 +1,1 @@
+update_pkgver=$(curl -m 10 -s https://repo.skype.com/deb/pool/main/s/skypeforlinux/ | sed -ns 's/.*\(skypeforlinux_.*_amd64.deb\).*/\1/p' | sort -V | tail -n 1 | sed -s 's/skypeforlinux_\(.*\)_amd64.deb/\1/')
