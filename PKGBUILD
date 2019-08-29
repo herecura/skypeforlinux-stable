@@ -3,7 +3,7 @@
 
 _pkgname=skypeforlinux
 pkgname=$_pkgname-stable
-pkgver=8.51.76.87
+pkgver=8.52.76.76
 pkgrel=1
 pkgdesc="Skype for Linux - Stable/Release Version"
 arch=("x86_64")
@@ -17,7 +17,7 @@ provides=("$_pkgname" "skype")
 source=(
 "https://repo.skype.com/deb/pool/main/s/$_pkgname/${_pkgname}_${pkgver}_amd64.deb"
 )
-sha256sums=('04af98c1a61ff7f45e9d6eeab00791096aa9847ffdb6b8317f9f29914f649117')
+sha256sums=('ed026569f8002615a24ca79675d2e7bc6cf81c65dbb562e7e9795e76d4a22d9a')
 
 package() {
   tar -xJC "$pkgdir" -f data.tar.xz
