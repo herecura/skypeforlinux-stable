@@ -4,12 +4,12 @@
 _pkgname=skypeforlinux
 pkgname=$_pkgname-stable
 pkgver=8.56.76.35
-pkgrel=1
+pkgrel=2
 pkgdesc="Skype for Linux - Stable/Release Version"
 arch=("x86_64")
 url="http://www.skype.com"
 license=("custom")
-depends=("gtk3" "libxss" "gconf" "alsa-lib" "libxtst" "libsecret" "nss" "glibc>=2.28-4")
+depends=("gtk3" "libxss" "alsa-lib" "libxtst" "libsecret" "nss" "glibc>=2.28-4")
 optdepends=("gnome-keyring")
 conflicts=("$_pkgname" "$_pkgname-bin" "$_pkgname-preview-bin" "$_pkgname-beta-bin" "skype")
 replaces=("$_pkgname-bin" "$_pkgname-preview-bin" "$_pkgname-beta-bin" "skype")
